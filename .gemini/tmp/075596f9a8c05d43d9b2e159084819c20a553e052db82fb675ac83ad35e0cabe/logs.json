@@ -1,0 +1,44 @@
+[
+  {
+    "sessionId": "da45a508-7b29-4308-95e8-3d9e16a091c4",
+    "messageId": 0,
+    "type": "user",
+    "message": "why this idea failed!? and project",
+    "timestamp": "2025-09-18T09:55:57.556Z"
+  },
+  {
+    "sessionId": "da45a508-7b29-4308-95e8-3d9e16a091c4",
+    "messageId": 1,
+    "type": "user",
+    "message": "(gcloud.run.deploy) Build failed; check build logs for details",
+    "timestamp": "2025-09-18T09:59:01.478Z"
+  },
+  {
+    "sessionId": "da45a508-7b29-4308-95e8-3d9e16a091c4",
+    "messageId": 2,
+    "type": "user",
+    "message": "@lielens-backend/ Can you just let me know why it is failing",
+    "timestamp": "2025-09-18T10:01:51.038Z"
+  },
+  {
+    "sessionId": "da45a508-7b29-4308-95e8-3d9e16a091c4",
+    "messageId": 3,
+    "type": "user",
+    "message": "Yes can you fix that and optimise it so that it doesn't fail",
+    "timestamp": "2025-09-18T10:04:36.646Z"
+  },
+  {
+    "sessionId": "da45a508-7b29-4308-95e8-3d9e16a091c4",
+    "messageId": 4,
+    "type": "user",
+    "message": "Okay so does now our project will work? actually it is getting ready and prview successfully but the analaysis part it is failing so cross check once again and let me know if any",
+    "timestamp": "2025-09-18T10:06:56.686Z"
+  },
+  {
+    "sessionId": "da45a508-7b29-4308-95e8-3d9e16a091c4",
+    "messageId": 5,
+    "type": "user",
+    "message": "Actually it is giving this error, wait i will provide you the error which it is giving see it ...\"https://mindful-compass-api-1082426526892.us-central1.run.app/analyze' from origin 'https://5500-cs-13102a53-7d67-4d88-9c9c-7bc40db54444.cs-asia-southeast1-cash.cloudshell.dev' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error\nmindful-compass-api-1082426526892.us-central1.run.app/analyze:1  Failed to load resource: net::ERR_FAILEDUnderstand this error\nscript.js:44 Error: TypeError: Failed to fetch\n    at HTMLFormElement.<anonymous> (script.js:25:32)\"",
+    "timestamp": "2025-09-18T10:08:58.561Z"
+  }
+]

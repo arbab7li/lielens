@@ -1,0 +1,117 @@
+2025-09-19 05:49:29.088 [info] [main] Log level: Info
+2025-09-19 05:49:29.088 [info] [main] Validating found git in: "git"
+2025-09-19 05:49:29.088 [info] [main] Using git "2.43.0" from "git"
+2025-09-19 05:49:29.088 [info] [Model][doInitialScan] Initial repository scan started
+2025-09-19 05:49:29.088 [info] > git rev-parse --show-toplevel [16ms]
+2025-09-19 05:49:29.088 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-09-19 05:49:29.088 [info] > git rev-parse --show-toplevel [9ms]
+2025-09-19 05:49:29.088 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-09-19 05:49:29.108 [info] > git rev-parse --show-toplevel [3ms]
+2025-09-19 05:49:29.110 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-09-19 05:49:29.124 [info] > git rev-parse --show-toplevel [7ms]
+2025-09-19 05:49:29.124 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-09-19 05:49:29.140 [info] > git rev-parse --show-toplevel [3ms]
+2025-09-19 05:49:29.140 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-09-19 05:49:29.149 [info] > git rev-parse --show-toplevel [2ms]
+2025-09-19 05:49:29.149 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-09-19 05:49:29.158 [info] > git rev-parse --show-toplevel [2ms]
+2025-09-19 05:49:29.158 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-09-19 05:49:29.171 [info] > git rev-parse --show-toplevel [1ms]
+2025-09-19 05:49:29.172 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-09-19 05:49:29.185 [info] > git rev-parse --show-toplevel [1ms]
+2025-09-19 05:49:29.187 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-09-19 05:49:29.218 [info] > git rev-parse --show-toplevel [8ms]
+2025-09-19 05:49:29.218 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-09-19 05:49:29.229 [info] > git rev-parse --show-toplevel [4ms]
+2025-09-19 05:49:29.230 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-09-19 05:49:29.241 [info] > git rev-parse --show-toplevel [3ms]
+2025-09-19 05:49:29.241 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-09-19 05:49:29.260 [info] > git rev-parse --show-toplevel [2ms]
+2025-09-19 05:49:29.260 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-09-19 05:49:29.260 [info] [Model][doInitialScan] Initial repository scan completed - repositories (0), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-09-19 05:49:47.249 [info] > git rev-parse --show-toplevel [5ms]
+2025-09-19 05:49:47.249 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-09-19 05:55:28.942 [info] > git init -b main [20ms]
+2025-09-19 05:55:28.951 [info] > git rev-parse --show-toplevel [1ms]
+2025-09-19 05:55:28.961 [info] > git rev-parse --git-dir --git-common-dir [1ms]
+2025-09-19 05:55:28.973 [info] [Model][openRepository] Opened repository (path): /home/itzarbabali
+2025-09-19 05:55:28.974 [info] [Model][openRepository] Opened repository (real path): /home/itzarbabali
+2025-09-19 05:55:29.005 [info] [Git][getRemotes] No remotes found in the git config file
+2025-09-19 05:55:29.005 [info] > git config --get commit.template [11ms]
+2025-09-19 05:55:29.007 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [4ms]
+2025-09-19 05:55:29.007 [warning] [Git][getBranch] No such branch: main
+2025-09-19 05:55:29.031 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [3ms]
+2025-09-19 05:55:29.310 [info] > git status -z -uall [295ms] (cancelled)
+2025-09-19 05:55:30.883 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1582ms]
+2025-09-19 05:55:30.884 [warning] [Git][getBranch] No such branch: main
+2025-09-19 05:55:30.884 [error] [GitHistoryProvider][resolveHEADMergeBase] Failed to resolve merge base for main: Error: No such branch: main.
+2025-09-19 05:55:30.909 [info] > git config --get commit.template [37ms]
+2025-09-19 05:55:30.943 [info] [Git][getRemotes] No remotes found in the git config file
+2025-09-19 05:55:30.949 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [7ms]
+2025-09-19 05:55:30.949 [warning] [Git][getBranch] No such branch: main
+2025-09-19 05:55:31.002 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [6ms]
+2025-09-19 05:55:31.151 [info] > git status -z -uall [179ms] (cancelled)
+2025-09-19 05:55:32.993 [info] > git check-ignore -v -z --stdin [1477ms]
+2025-09-19 05:55:43.461 [info] > git add -A -- . [14475ms]
+2025-09-19 05:55:44.116 [info] > git -c user.useConfigOnly=true commit --quiet --allow-empty-message --file - --allow-empty-message [647ms]
+2025-09-19 05:55:44.116 [info] Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: no email was given and auto-detection is disabled
+2025-09-19 05:55:44.127 [info] > git config --get-all user.name [1ms]
+2025-09-19 05:55:44.141 [info] [Git][getRemotes] No remotes found in the git config file
+2025-09-19 05:55:44.142 [info] > git config --get commit.template [8ms]
+2025-09-19 05:55:44.143 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-09-19 05:55:44.143 [warning] [Git][getBranch] No such branch: main
+2025-09-19 05:55:44.170 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-19 05:55:44.371 [info] > git status -z -uall [221ms] (cancelled)
+2025-09-19 05:57:32.849 [info] > git show --textconv :lie-lens-frontend/index.html [10ms]
+2025-09-19 05:57:32.855 [info] > git ls-files --stage -- lie-lens-frontend/index.html [8ms]
+2025-09-19 05:57:32.866 [info] > git cat-file -s 8092795cdac2ecbdfa0e131b098b92979829efd1 [2ms]
+2025-09-19 05:59:41.025 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z --shortstat --diff-merges=first-parent -n50 --skip=0 --topo-order --decorate=full --stdin [32ms]
+2025-09-19 05:59:41.025 [info] fatal: bad revision 'refs/heads/main'
+2025-09-19 05:59:41.025 [error] [GitHistoryProvider][provideHistoryItems] Failed to get history items with options '{"historyItemRefs":["refs/heads/main"],"limit":50,"skip":0}': Failed to execute git {
+  "exitCode": 128,
+  "gitCommand": "log",
+  "stdout": "",
+  "stderr": "fatal: bad revision 'refs/heads/main'\n"
+}
+2025-09-19 05:59:41.540 [info] > git check-ignore -v -z --stdin [8ms]
+2025-09-19 05:59:51.553 [info] > git check-ignore -v -z --stdin [6ms]
+2025-09-19 05:59:52.179 [info] > git check-ignore -v -z --stdin [6ms]
+2025-09-19 05:59:52.955 [info] > git check-ignore -v -z --stdin [6ms]
+2025-09-19 05:59:53.907 [info] > git check-ignore -v -z --stdin [6ms]
+2025-09-19 06:00:03.037 [info] > git check-ignore -v -z --stdin [66ms]
+2025-09-19 06:00:05.621 [info] > git check-ignore -v -z --stdin [21ms]
+2025-09-19 06:00:13.139 [info] > git check-ignore -v -z --stdin [119ms]
+2025-09-19 06:00:15.106 [info] > git check-ignore -v -z --stdin [26ms]
+2025-09-19 06:00:16.833 [info] > git check-ignore -v -z --stdin [63ms]
+2025-09-19 06:00:18.344 [info] > git check-ignore -v -z --stdin [163ms]
+2025-09-19 06:00:21.035 [info] > git check-ignore -v -z --stdin [167ms]
+2025-09-19 06:00:22.652 [info] > git check-ignore -v -z --stdin [145ms]
+2025-09-19 06:09:23.252 [info] > git ls-files --stage -- lie-lens-frontend/index.html [8ms]
+2025-09-19 06:09:23.262 [info] > git cat-file -s 8092795cdac2ecbdfa0e131b098b92979829efd1 [2ms]
+2025-09-19 06:09:23.364 [info] > git show --textconv :lie-lens-frontend/index.html [6ms]

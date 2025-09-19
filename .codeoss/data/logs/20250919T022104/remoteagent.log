@@ -1,0 +1,18 @@
+2025-09-19 02:21:05.026 [info] 
+
+
+
+
+2025-09-19 02:21:05.056 [info] Extension host agent started.
+2025-09-19 02:21:06.954 [info] [127.0.0.1][1223dcc1][ManagementConnection] New connection established.
+2025-09-19 02:21:06.988 [info] [127.0.0.1][f127d65d][ExtensionHostConnection] New connection established.
+2025-09-19 02:21:07.152 [info] ComputeTargetPlatform: linux-x64
+2025-09-19 02:21:08.237 [info] [127.0.0.1][f127d65d][ExtensionHostConnection] <1599> Launched Extension Host Process.
+2025-09-19 02:21:11.290 [info] ComputeTargetPlatform: linux-x64
+2025-09-19 02:24:40.797 [info] [127.0.0.1][1223dcc1][ManagementConnection] The client has reconnected.
+2025-09-19 02:24:40.989 [info] [127.0.0.1][f127d65d][ExtensionHostConnection] The client has reconnected.
+2025-09-19 02:25:44.481 [info] [127.0.0.1][1223dcc1][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+2025-09-19 02:26:24.686 [info] [127.0.0.1][1223dcc1][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+2025-09-19 02:26:24.686 [info] [127.0.0.1][f127d65d][ExtensionHostConnection] The client has reconnected.
+2025-09-19 02:26:24.868 [info] [127.0.0.1][1223dcc1][ManagementConnection] The client has reconnected.
+2025-09-19 02:28:29.286 [info] [127.0.0.1][1223dcc1][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
