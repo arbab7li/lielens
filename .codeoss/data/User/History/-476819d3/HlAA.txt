@@ -1,7 +1,0 @@
-fastapi
-uvicorn
-requests
-google-generativeai
-google-cloud-secret-manager
-pydantic
-```
