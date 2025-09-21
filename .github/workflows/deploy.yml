@@ -1,0 +1,34 @@
+name: Deploy to Render
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    
+    - name: Install dependencies
+      run: |
+        cd lielens-backend
+        pip install -r requirements.txt
+    
+    - name: Test backend
+      run: |
+        cd lielens-backend
+        python -c "import app; print('Backend imports successfully')"
+    
+    - name: Deploy to Render
+      run: |
+        echo "Push to main branch triggers auto-deploy on Render"
+        echo "Make sure your Render service is connected to this repo"

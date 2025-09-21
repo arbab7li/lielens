@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LieLens - AI-Powered Misinformation Detection</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="brand">
+                <div class="logo">
+                    <i class="fas fa-compass"></i>
+                </div>
+                <h1>LieLens</h1>
+                <p class="tagline">Read Between The Lines</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <section class="hero">
+                <h2>Detect Misinformation & Understand Your Biases</h2>
+                <p class="hero-description">
+                    Our AI doesn't just tell you if something might be false—it teaches you
+                    <strong>why</strong> you might believe it and <strong>how</strong> to think more critically.
+                </p>
+                
+                <!-- Backend Status Indicator -->
+                <div id="backendStatus" class="backend-status">
+                    <i class="fas fa-circle" id="statusIcon"></i>
+                    <span id="statusText">Checking backend connection...</span>
+                </div>
+            </section>
+
+            <section class="input-section">
+                <div class="input-card">
+                    <form id="analysisForm" class="analysis-form">
+                        <div class="form-group">
+                            <label for="contentInput" class="form-label">
+                                <i class="fas fa-search"></i>
+                                Paste a URL or text to analyze
+                            </label>
+                            <textarea
+                                id="contentInput"
+                                name="content"
+                                class="content-input"
+                                placeholder="Enter a URL (like https://example.com/article) or paste text content here..."
+                                rows="6"
+                                required
+                            ></textarea>
+                        </div>
+                        
+                        <!-- Demo Button -->
+                        <div class="demo-section">
+                            <button type="button" id="demoBtn" class="demo-btn">
+                                <i class="fas fa-play"></i>
+                                Try Demo Analysis
+                            </button>
+                            <small>See how LieLens works with sample content</small>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="submit" id="analyzeBtn" class="analyze-btn">
+                                <i class="fas fa-brain"></i>
+                                <span class="btn-text">Analyze Content</span>
+                                <div class="btn-loading">
+                                    <i class="fas fa-spinner fa-spin"></i>
+                                    <span>Analyzing...</span>
+                                </div>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Rest of your existing HTML remains the same -->
+            <section id="resultsSection" class="results-section hidden">
+                <div class="results-container">
+                    <div class="report-card summary-card">
+                        <div class="card-header">
+                            <h3><i class="fas fa-chart-line"></i> Analysis Summary</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="risk-indicator">
+                                <div id="riskLevel" class="risk-level">
+                                    <div class="risk-badge">
+                                        <i class="fas fa-shield-alt"></i>
+                                        <span id="riskLevelText">-</span>
+                                    </div>
+                                </div>
+                                <div class="credibility-rating">
+                                    <span class="rating-label">Credibility:</span>
+                                    <span id="credibilityRating" class="rating-value">-</span>
+                                </div>
+                            </div>
+                            <div class="primary-concern">
+                                <h4>Primary Concern</h4>
+                                <p id="primaryConcern">-</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="report-card tactics-card">
+                        <div class="card-header">
+                            <h3><i class="fas fa-crosshairs"></i> Manipulation Tactics Detected</h3>
+                        </div>
+                        <div class="card-content">
+                            <div id="detectedTactics" class="tactics-list">
+                                </div>
+                        </div>
+                    </div>
+
+                    <div class="report-card biases-card">
+                        <div class="card-header">
+                            <h3><i class="fas fa-brain"></i> Cognitive Biases Exploited</h3>
+                            <p class="card-subtitle">Learn why you might be susceptible</p>
+                        </div>
+                        <div class="card-content">
+                            <div id="cognitiveBiases" class="biases-list">
+                                </div>
+                        </div>
+                    </div>
+
+                    <div class="report-card insights-card">
+                        <div class="card-header">
+                            <h3><i class="fas fa-lightbulb"></i> Educational Insights</h3>
+                            <p class="card-subtitle">Understanding the psychology behind the content</p>
+                        </div>
+                        <div class="card-content">
+                            <div class="insights-grid">
+                                <div class="insight-item">
+                                    <h4><i class="fas fa-question-circle"></i> Why This Might Be Convincing</h4>
+                                    <p id="whyConvincing">-</p>
+                                </div>
+                                <div class="insight-item">
+                                    <h4><i class="fas fa-users"></i> Target Audience</h4>
+                                    <p id="targetAudience">-</p>
+                                </div>
+                                <div class="insight-item">
+                                    <h4><i class="fas fa-heart"></i> Psychological Appeal</h4>
+                                    <p id="psychologicalAppeal">-</p>
+                                </div>
+                            </div>
+                            
+                            <div class="questions-section">
+                                <h4><i class="fas fa-clipboard-question"></i> Critical Questions to Ask</h4>
+                                <ul id="criticalQuestions" class="questions-list">
+                                    </ul>
+                            </div>
+                            
+                            <div class="verification-section">
+                                <h4><i class="fas fa-search-plus"></i> Verification Steps</h4>
+                                <ol id="verificationSteps" class="verification-list">
+                                    </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="factCheckSection" class="report-card flags-card hidden">
+                        <div class="card-header">
+                            <h3><i class="fas fa-flag"></i> Fact-Check Flags</h3>
+                        </div>
+                        <div class="card-content">
+                            <div id="factCheckFlags" class="flags-list">
+                                </div>
+                        </div>
+                    </div>
+
+                    <div class="report-card recommendations-card">
+                        <div class="card-header">
+                            <h3><i class="fas fa-compass"></i> Recommendations</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="recommendation-grid">
+                                <div class="recommendation-item immediate">
+                                    <h4><i class="fas fa-exclamation-triangle"></i> Immediate Action</h4>
+                                    <p id="immediateAction">-</p>
+                                </div>
+                                <div class="recommendation-item share">
+                                    <h4><i class="fas fa-share-alt"></i> Should You Share This?</h4>
+                                    <div id="shareDecision" class="share-decision">
+                                        <span class="decision-badge">-</span>
+                                    </div>
+                                </div>
+                                <div class="recommendation-item learning">
+                                    <h4><i class="fas fa-graduation-cap"></i> Learning Opportunity</h4>
+                                    <p id="learningOpportunity">-</p>
+                                </div>
+                            </div>
+                            
+                            <div class="research-section">
+                                <h4><i class="fas fa-book-open"></i> Further Research</h4>
+                                <ul id="furtherResearch" class="research-list">
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="report-card metrics-card">
+                        <div class="card-header">
+                            <h3><i class="fas fa-chart-bar"></i> Analysis Confidence</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="confidence-grid">
+                                <div class="confidence-item">
+                                    <label>Analysis Confidence</label>
+                                    <div class="confidence-bar">
+                                        <div id="analysisConfidenceBar" class="confidence-fill"></div>
+                                        <span id="analysisConfidenceText">-</span>
+                                    </div>
+                                </div>
+                                <div class="confidence-item">
+                                    <label>Data Completeness</label>
+                                    <div class="confidence-bar">
+                                        <div id="dataCompletenessBar" class="confidence-fill"></div>
+                                        <span id="dataCompletenessText">-</span>
+                                    </div>
+                                </div>
+                                <div class="confidence-item">
+                                    <label>Context Availability</label>
+                                    <span id="contextAvailability" class="context-badge">-</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="action-buttons">
+                    <button id="newAnalysisBtn" class="secondary-btn">
+                        <i class="fas fa-redo"></i> Analyze New Content
+                    </button>
+                </div>
+            </section>
+
+            <section id="errorSection" class="error-section hidden">
+                <div class="error-card">
+                    <div class="error-icon">
+                        <i class="fas fa-exclamation-circle"></i>
+                    </div>
+                    <h3>Analysis Failed</h3>
+                    <p id="errorMessage">Something went wrong. Please try again.</p>
+                    <button id="retryBtn" class="retry-btn">
+                        <i class="fas fa-redo"></i> Try Again
+                    </button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 LieLens. Empowering critical thinking in the digital age.</p>
+            <div class="footer-links">
+                <a href="#" class="footer-link">About</a>
+                <a href="#" class="footer-link">Privacy</a>
+                <a href="#" class="footer-link">Terms</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="loadingOverlay" class="loading-overlay hidden">
+        <div class="loading-spinner">
+            <div class="spinner-ring"></div>
+            <h3>Analyzing Content...</h3>
+            <p>Our AI is detecting manipulation tactics and cognitive biases</p>
+        </div>
+    </div>
+    <script src="script-enhanced.js"></script>
+</body>
+</html>
