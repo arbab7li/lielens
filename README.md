@@ -89,11 +89,3 @@ LieLens is a full-stack web application built on a scalable, serverless architec
 - [ ] A 3-minute demo video showcasing the project's features.
 - [ ] This GitHub repository with all source code and documentation.
 
----
-
-## 🤝 Team DevNeX
-| Name                     | LinkedIn                  |
-|--------------------------|---------------------------|
-| Mohammed Anwar Qureshi   | [Link to your LinkedIn]   |
-| Arbab Ansar Ali          | [Link to their LinkedIn]  |
-| Mir Haroon Ali           | [Link to their LinkedIn]  |
